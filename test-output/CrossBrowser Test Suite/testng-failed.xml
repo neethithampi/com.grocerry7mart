@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [CrossBrowser Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Firefox Browser Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="executeClass.ExecuteDashBoardPage">
+        <methods>
+          <include name="verifyManageTileIsPresentOrNot"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyListPagesIsDisplayedWhenClickedOnManagePagesMoreInfo"/>
+          <include name="verifyDashBoardIsVisibleAfterLoginOrNot"/>
+        </methods>
+      </class> <!-- executeClass.ExecuteDashBoardPage -->
+      <class name="executeClass.ExecutePushNotificationPage">
+        <methods>
+          <include name="verifyAdminCanSendNotificationSuccessfullyOrNot"/>
+          <include name="verifyResetButtonIsVisibleOrNot"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyPushNotificationPageIsDisplayedWhenClickedOnPushNotification"/>
+        </methods>
+      </class> <!-- executeClass.ExecutePushNotificationPage -->
+      <class name="executeClass.ExecuteManageUsersPage">
+        <methods>
+          <include name="verifyUserCanPerformSearchUsingEmail"/>
+          <include name="verifyTheAdminCanChangeTheStatusOfAnyUser"/>
+          <include name="verifyListUsersPageIsDisplayedWhenClickedOnManageUsersPage"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyUserCanPerformSearchUsingName"/>
+        </methods>
+      </class> <!-- executeClass.ExecuteManageUsersPage -->
+      <class name="executeClass.ExecuteManageProduct">
+        <methods>
+          <include name="verifyWhenClickedOnManageProductsListProductsIsDisplayed"/>
+          <include name="afterMethod"/>
+          <include name="verifyTheUserCanDeleteCreatedProductOrNot"/>
+          <include name="verifyTheUserIsAbleToAddNewList"/>
+          <include name="beforeMethod"/>
+          <include name="verifyUserCanNavigateToLastPageWhenClickedOnLast"/>
+          <include name="verifyUserCanSearchProductUsingProductName"/>
+          <include name="verifyResetIsWorkingOrNot"/>
+        </methods>
+      </class> <!-- executeClass.ExecuteManageProduct -->
+      <class name="executeClass.ExecuteManageExpensePage">
+        <methods>
+          <include name="verifyExpenseCategoryListIsDisplayedWhenClickedOnExpenseCategory"/>
+          <include name="verifyTheAdminCanSearchNewlyCreatedExpenseCategory"/>
+          <include name="verifyTheAdminCanEditTheNewlyCreatedExpenseCategory"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyTheAdminCanCreateNewExpenseCategory"/>
+          <include name="verifyTheAdminCanDeleteTheCreatedExpenseCategory"/>
+        </methods>
+      </class> <!-- executeClass.ExecuteManageExpensePage -->
+      <class name="executeClass.ExecuteLoginPage">
+        <methods>
+          <include name="verifyRememberMeCheckboxIsSelectedOrNot"/>
+          <include name="verifyLoginPageIsVisibleWhileLaunchingTheApplication"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifySuccessfullLoginWithValidUsernameAndPassword"/>
+          <include name="verifyUnsuccessfullLogin"/>
+          <include name="isHomePageDisplayedWhileLogin"/>
+        </methods>
+      </class> <!-- executeClass.ExecuteLoginPage -->
+      <class name="executeClass.ExecuteVerifyUsersPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyUserCanSearchUsingPhoneNumber"/>
+          <include name="verifyUserCanSearchUsingName"/>
+          <include name="verifyListUsersPageIsDisplayedWhenClickedOnVerifyUsersPage"/>
+        </methods>
+      </class> <!-- executeClass.ExecuteVerifyUsersPage -->
+      <class name="executeClass.ExecuteManageOrdersPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyTheAdminCanViewTheOrderDetailsOfSearchedOrder"/>
+          <include name="verifyTheAdminCanSearchAnOrderByUsingOrderId"/>
+        </methods>
+      </class> <!-- executeClass.ExecuteManageOrdersPage -->
+    </classes>
+  </test> <!-- Firefox Browser Test(failed) -->
+</suite> <!-- Failed suite [CrossBrowser Test Suite] -->

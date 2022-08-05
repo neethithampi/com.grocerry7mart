@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>TestNG:  Edge Browser Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Edge Browser Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>33/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 05 19:49:42 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>720 seconds (720554 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='executeClass.ExecuteLoginPage.verifyUnsuccessfullLogin()'><b>verifyUnsuccessfullLogin</b><br>Test class: executeClass.ExecuteLoginPage<br>Parameters: admin, admin111</td>
+<td></td>
+<td>0</td>
+<td>executeClass.ExecuteLoginPage@1b7cc17c</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageExpensePage.verifyTheAdminCanDeleteTheCreatedExpenseCategory()'><b>verifyTheAdminCanDeleteTheCreatedExpenseCategory</b><br>Test class: executeClass.ExecuteManageExpensePage</td>
+<td></td>
+<td>2</td>
+<td>executeClass.ExecuteManageExpensePage@48f2bd5b</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageExpensePage.verifyTheAdminCanCreateNewExpenseCategory()'><b>verifyTheAdminCanCreateNewExpenseCategory</b><br>Test class: executeClass.ExecuteManageExpensePage</td>
+<td></td>
+<td>4</td>
+<td>executeClass.ExecuteManageExpensePage@48f2bd5b</td></tr>
+<tr>
+<td title='executeClass.ExecuteLoginPage.isHomePageDisplayedWhileLogin()'><b>isHomePageDisplayedWhileLogin</b><br>Test class: executeClass.ExecuteLoginPage<br>Parameters: admin, admin</td>
+<td></td>
+<td>5</td>
+<td>executeClass.ExecuteLoginPage@1b7cc17c</td></tr>
+<tr>
+<td title='executeClass.ExecuteLoginPage.verifySuccessfullLoginWithValidUsernameAndPassword()'><b>verifySuccessfullLoginWithValidUsernameAndPassword</b><br>Test class: executeClass.ExecuteLoginPage<br>Parameters: admin, admin</td>
+<td></td>
+<td>3</td>
+<td>executeClass.ExecuteLoginPage@1b7cc17c</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageProduct.verifyTheUserCanDeleteCreatedProductOrNot()'><b>verifyTheUserCanDeleteCreatedProductOrNot</b><br>Test class: executeClass.ExecuteManageProduct</td>
+<td></td>
+<td>3</td>
+<td>executeClass.ExecuteManageProduct@a1153bc</td></tr>
+<tr>
+<td title='executeClass.ExecuteLoginPage.verifyUnsuccessfullLogin()'><b>verifyUnsuccessfullLogin</b><br>Test class: executeClass.ExecuteLoginPage<br>Parameters: admin111, admin222</td>
+<td></td>
+<td>0</td>
+<td>executeClass.ExecuteLoginPage@1b7cc17c</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageProduct.verifyUserCanSearchProductUsingProductName()'><b>verifyUserCanSearchProductUsingProductName</b><br>Test class: executeClass.ExecuteManageProduct</td>
+<td></td>
+<td>2</td>
+<td>executeClass.ExecuteManageProduct@a1153bc</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageOrdersPage.verifyTheAdminCanViewTheOrderDetailsOfSearchedOrder()'><b>verifyTheAdminCanViewTheOrderDetailsOfSearchedOrder</b><br>Test class: executeClass.ExecuteManageOrdersPage</td>
+<td></td>
+<td>3</td>
+<td>executeClass.ExecuteManageOrdersPage@7b2bbc3</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageProduct.verifyResetIsWorkingOrNot()'><b>verifyResetIsWorkingOrNot</b><br>Test class: executeClass.ExecuteManageProduct</td>
+<td></td>
+<td>4</td>
+<td>executeClass.ExecuteManageProduct@a1153bc</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageUsersPage.verifyListUsersPageIsDisplayedWhenClickedOnManageUsersPage()'><b>verifyListUsersPageIsDisplayedWhenClickedOnManageUsersPage</b><br>Test class: executeClass.ExecuteManageUsersPage</td>
+<td></td>
+<td>1</td>
+<td>executeClass.ExecuteManageUsersPage@47eaca72</td></tr>
+<tr>
+<td title='executeClass.ExecutePushNotificationPage.verifyAdminCanSendNotificationSuccessfullyOrNot()'><b>verifyAdminCanSendNotificationSuccessfullyOrNot</b><br>Test class: executeClass.ExecutePushNotificationPage</td>
+<td></td>
+<td>4</td>
+<td>executeClass.ExecutePushNotificationPage@55141def</td></tr>
+<tr>
+<td title='executeClass.ExecuteLoginPage.verifyRememberMeCheckboxIsSelectedOrNot()'><b>verifyRememberMeCheckboxIsSelectedOrNot</b><br>Test class: executeClass.ExecuteLoginPage</td>
+<td></td>
+<td>0</td>
+<td>executeClass.ExecuteLoginPage@1b7cc17c</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageUsersPage.verifyUserCanPerformSearchUsingEmail()'><b>verifyUserCanPerformSearchUsingEmail</b><br>Test class: executeClass.ExecuteManageUsersPage</td>
+<td></td>
+<td>2</td>
+<td>executeClass.ExecuteManageUsersPage@47eaca72</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageProduct.verifyWhenClickedOnManageProductsListProductsIsDisplayed()'><b>verifyWhenClickedOnManageProductsListProductsIsDisplayed</b><br>Test class: executeClass.ExecuteManageProduct</td>
+<td></td>
+<td>2</td>
+<td>executeClass.ExecuteManageProduct@a1153bc</td></tr>
+<tr>
+<td title='executeClass.ExecutePushNotificationPage.verifyResetButtonIsVisibleOrNot()'><b>verifyResetButtonIsVisibleOrNot</b><br>Test class: executeClass.ExecutePushNotificationPage</td>
+<td></td>
+<td>1</td>
+<td>executeClass.ExecutePushNotificationPage@55141def</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageExpensePage.verifyTheAdminCanSearchNewlyCreatedExpenseCategory()'><b>verifyTheAdminCanSearchNewlyCreatedExpenseCategory</b><br>Test class: executeClass.ExecuteManageExpensePage</td>
+<td></td>
+<td>2</td>
+<td>executeClass.ExecuteManageExpensePage@48f2bd5b</td></tr>
+<tr>
+<td title='executeClass.ExecuteDashBoardPage.verifyListPagesIsDisplayedWhenClickedOnManagePagesMoreInfo()'><b>verifyListPagesIsDisplayedWhenClickedOnManagePagesMoreInfo</b><br>Test class: executeClass.ExecuteDashBoardPage<br>Parameters: admin, admin</td>
+<td></td>
+<td>3</td>
+<td>executeClass.ExecuteDashBoardPage@692f203f</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageOrdersPage.verifyTheAdminCanSearchAnOrderByUsingOrderId()'><b>verifyTheAdminCanSearchAnOrderByUsingOrderId</b><br>Test class: executeClass.ExecuteManageOrdersPage</td>
+<td></td>
+<td>7</td>
+<td>executeClass.ExecuteManageOrdersPage@7b2bbc3</td></tr>
+<tr>
+<td title='executeClass.ExecuteDashBoardPage.verifyManageTileIsPresentOrNot()'><b>verifyManageTileIsPresentOrNot</b><br>Test class: executeClass.ExecuteDashBoardPage<br>Parameters: admin, admin</td>
+<td></td>
+<td>1</td>
+<td>executeClass.ExecuteDashBoardPage@692f203f</td></tr>
+<tr>
+<td title='executeClass.ExecuteVerifyUsersPage.verifyUserCanSearchUsingName()'><b>verifyUserCanSearchUsingName</b><br>Test class: executeClass.ExecuteVerifyUsersPage</td>
+<td></td>
+<td>2</td>
+<td>executeClass.ExecuteVerifyUsersPage@1aafa419</td></tr>
+<tr>
+<td title='executeClass.ExecuteLoginPage.verifyLoginPageIsVisibleWhileLaunchingTheApplication()'><b>verifyLoginPageIsVisibleWhileLaunchingTheApplication</b><br>Test class: executeClass.ExecuteLoginPage</td>
+<td></td>
+<td>0</td>
+<td>executeClass.ExecuteLoginPage@1b7cc17c</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageUsersPage.verifyTheAdminCanChangeTheStatusOfAnyUser()'><b>verifyTheAdminCanChangeTheStatusOfAnyUser</b><br>Test class: executeClass.ExecuteManageUsersPage</td>
+<td></td>
+<td>1</td>
+<td>executeClass.ExecuteManageUsersPage@47eaca72</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageProduct.verifyUserCanNavigateToLastPageWhenClickedOnLast()'><b>verifyUserCanNavigateToLastPageWhenClickedOnLast</b><br>Test class: executeClass.ExecuteManageProduct</td>
+<td></td>
+<td>7</td>
+<td>executeClass.ExecuteManageProduct@a1153bc</td></tr>
+<tr>
+<td title='executeClass.ExecutePushNotificationPage.verifyPushNotificationPageIsDisplayedWhenClickedOnPushNotification()'><b>verifyPushNotificationPageIsDisplayedWhenClickedOnPushNotification</b><br>Test class: executeClass.ExecutePushNotificationPage</td>
+<td></td>
+<td>1</td>
+<td>executeClass.ExecutePushNotificationPage@55141def</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageProduct.verifyTheUserIsAbleToAddNewList()'><b>verifyTheUserIsAbleToAddNewList</b><br>Test class: executeClass.ExecuteManageProduct</td>
+<td></td>
+<td>18</td>
+<td>executeClass.ExecuteManageProduct@a1153bc</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageExpensePage.verifyTheAdminCanEditTheNewlyCreatedExpenseCategory()'><b>verifyTheAdminCanEditTheNewlyCreatedExpenseCategory</b><br>Test class: executeClass.ExecuteManageExpensePage</td>
+<td></td>
+<td>3</td>
+<td>executeClass.ExecuteManageExpensePage@48f2bd5b</td></tr>
+<tr>
+<td title='executeClass.ExecuteDashBoardPage.verifyDashBoardIsVisibleAfterLoginOrNot()'><b>verifyDashBoardIsVisibleAfterLoginOrNot</b><br>Test class: executeClass.ExecuteDashBoardPage<br>Parameters: admin, admin</td>
+<td></td>
+<td>5</td>
+<td>executeClass.ExecuteDashBoardPage@692f203f</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageUsersPage.verifyUserCanPerformSearchUsingName()'><b>verifyUserCanPerformSearchUsingName</b><br>Test class: executeClass.ExecuteManageUsersPage</td>
+<td></td>
+<td>2</td>
+<td>executeClass.ExecuteManageUsersPage@47eaca72</td></tr>
+<tr>
+<td title='executeClass.ExecuteVerifyUsersPage.verifyUserCanSearchUsingPhoneNumber()'><b>verifyUserCanSearchUsingPhoneNumber</b><br>Test class: executeClass.ExecuteVerifyUsersPage</td>
+<td></td>
+<td>3</td>
+<td>executeClass.ExecuteVerifyUsersPage@1aafa419</td></tr>
+<tr>
+<td title='executeClass.ExecuteManageExpensePage.verifyExpenseCategoryListIsDisplayedWhenClickedOnExpenseCategory()'><b>verifyExpenseCategoryListIsDisplayedWhenClickedOnExpenseCategory</b><br>Test class: executeClass.ExecuteManageExpensePage</td>
+<td></td>
+<td>3</td>
+<td>executeClass.ExecuteManageExpensePage@48f2bd5b</td></tr>
+<tr>
+<td title='executeClass.ExecuteLoginPage.verifyUnsuccessfullLogin()'><b>verifyUnsuccessfullLogin</b><br>Test class: executeClass.ExecuteLoginPage<br>Parameters: admin111, admin</td>
+<td></td>
+<td>0</td>
+<td>executeClass.ExecuteLoginPage@1b7cc17c</td></tr>
+<tr>
+<td title='executeClass.ExecuteVerifyUsersPage.verifyListUsersPageIsDisplayedWhenClickedOnVerifyUsersPage()'><b>verifyListUsersPageIsDisplayedWhenClickedOnVerifyUsersPage</b><br>Test class: executeClass.ExecuteVerifyUsersPage</td>
+<td></td>
+<td>1</td>
+<td>executeClass.ExecuteVerifyUsersPage@1aafa419</td></tr>
+</table><p>
+</body>
+</html>
